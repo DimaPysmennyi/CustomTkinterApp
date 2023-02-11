@@ -8,9 +8,9 @@ class Project_app(customtkinter.CTk):
         self.APP_WIDTH = app_width
         self.APP_HEIGHT = app_height
         self.SCREEN_WIDTH = self.winfo_screenwidth()
-        self.SCRREN_HEIGHT = self.winfo_screenheight()
+        self.SCREEN_HEIGHT = self.winfo_screenheight()
         self.title("Project №1")
-        self.geometry(f"{self.APP_WIDTH}x{self.APP_HEIGHT}+{0}+{self.SCRREN_HEIGHT}")
+        self.geometry(f"{self.APP_WIDTH}x{self.APP_HEIGHT}+{0}+{self.SCREEN_HEIGHT-200}")
         self.PROJECT_IMAGE = customtkinter.CTkImage(light_image = PIL.Image.open(f_p.find_path_file("images\\1.jpg")), size = (self.APP_WIDTH, self.APP_HEIGHT))
         self.IMAGE_LABEL1 = customtkinter.CTkLabel(master=self, text = "Моя перша практична робота з customtkinter", image = self.PROJECT_IMAGE, bg_color='black')
         self.IMAGE_LABEL2 = customtkinter.CTkLabel(master=self, text = "Кнопка натиснута", image = self.PROJECT_IMAGE, bg_color='black')
